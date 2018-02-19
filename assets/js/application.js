@@ -103,6 +103,7 @@ $(document).ready(function() {
                 if (object.trip_route_category != 'Round Trip') {
                   L.Routing.control({
                     show: false,
+                    units: 'imperial',
                     waypoints: [
                       L.latLng(object.start_lat, object.start_lon),
                       L.latLng(object.end_lat, object.end_lon)
